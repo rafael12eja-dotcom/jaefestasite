@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Café ao Casamento - Eventos Luxuosos em Casa</title>
+    <meta name="description" content="Planejamento de eventos luxuosos em casa no Brasil - do café da manhã ao casamento. Serviços premium de catering e organização de festas personalizadas.">
+    <meta name="keywords" content="festas em casa São Paulo, organização de 15 anos, eventos luxuosos, catering premium, planejamento de casamento">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#FEF7E0',
+                            300: '#F5E6A3',
+                            500: '#D4AF37',
+                            600: '#B8941F',
+                            700: '#9C7C10'
+                        },
+                        ivory: {
+                            100: '#FFFEF9',
+                            200: '#FAF9F0',
+                            300: '#F5F4E8'
+                        },
+                        blush: {
+                            100: '#FCF1F1',
+                            300: '#F7D7D7',
+                            500: '#E8B4B8',
+                            600: '#D49499'
+                        },
+                        navy: {
+                            500: '#1E293B',
+                            600: '#0F172A',
+                            700: '#020617'
+                        },
+                        emerald: {
+                            500: '#10B981',
+                            600: '#059669',
+                            700: '#047857'
+                        }
+                    },
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                        'crimson': ['Crimson Text', 'serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'parallax': 'parallax 20s linear infinite',
+                        'float': 'float 6s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(50px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        parallax: {
+                            '0%': { transform: 'translateY(0px)' },
+                            '100%': { transform: 'translateY(-50px)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(232, 180, 184, 0.1) 50%, rgba(16, 185, 129, 0.1) 100%);
+        }
+        
+        .luxury-shadow {
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15), 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #D4AF37, #E8B4B8, #10B981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 254, 249, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .btn-luxury {
+            background: linear-gradient(135deg, #D4AF37, #B8941F);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-luxury:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+        }
+        
+        .btn-luxury::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-luxury:hover::before {
+            left: 100%;
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+        
+        .service-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(232, 180, 184, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .service-card:hover::after {
+            opacity: 1;
+        }
+        
+        .tropical-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='%23d4af37' fill-opacity='0.03'%3E%3Cpath d='M20 20c0-11.046-8.954-20-20-20v20h20zm20 0c0-11.046-8.954-20-20-20v20h20z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, #D4AF37, #E8B4B8, #10B981);
+            z-index: 1000;
+            transition: width 0.1s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .parallax-bg {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body class="font-montserrat text-navy-500 overflow-x-hidden">
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollProgress"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-effect transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-gold-500 to-gold-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-coffee text-white text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-playfair font-bold text-xl text-navy-600">Do Café ao Casamento</h1>
+                        <p class="text-xs text-gold-600 font-medium">Sua celebração, nosso encanto</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Início</a>
+                    <a href="#about" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Sobre</a>
+                    <a href="#services" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Serviços</a>
+                    <a href="#gallery" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Galeria</a>
+                    <a href="#blog" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Blog</a>
+                    <a href="#contact" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Contato</a>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn-luxury text-white px-6 py-2 rounded-full font-medium">
+                        <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-navy-600 text-xl" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mobile-menu mt-4 pb-4" id="mobileMenu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Início</a>
+                    <a href="#about" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Sobre</a>
+                    <a href="#services" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Serviços</a>
+                    <a href="#gallery" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Galeria</a>
+                    <a href="#blog" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Blog</a>
+                    <a href="#contact" class="nav-link text-navy-600 hover:text-gold-600 transition-colors duration-300 font-medium">Contato</a>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn-luxury text-white px-6 py-3 rounded-full font-medium text-center">
+                        <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center hero-gradient parallax-bg relative" style="background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="animate-fade-in">
+                <h1 class="font-playfair text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    Do Café ao <span class="text-gradient">Casamento</span>
+                </h1>
+                <p class="font-crimson text-xl md:text-2xl text-ivory-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Transformamos sua casa em um cenário de sonhos, criando celebrações luxuosas e memoráveis que refletem sua personalidade única.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <button onclick="scrollToSection('services')" class="btn-luxury text-white px-8 py-4 rounded-full font-semibold text-lg luxury-shadow">
+                        <i class="fas fa-calendar-alt mr-3"></i>Planeje Sua Festa
+                    </button>
+                    <button onclick="startQuiz()" class="glass-effect text-white px-8 py-4 rounded-full font-semibold text-lg border border-white border-opacity-30 hover:bg-white hover:bg-opacity-20 transition-all duration-300">
+                        <i class="fas fa-magic mr-3"></i>Quiz Personalizado
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i class="fas fa-chevron-down text-white text-2xl opacity-70"></i>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-gold-500 bg-opacity-20 rounded-full animate-float"></div>
+        <div class="absolute bottom-32 right-16 w-16 h-16 bg-blush-500 bg-opacity-20 rounded-full animate-float" style="animation-delay: -2s;"></div>
+        <div class="absolute top-1/2 left-20 w-12 h-12 bg-emerald-500 bg-opacity-20 rounded-full animate-float" style="animation-delay: -4s;"></div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-ivory-100 tropical-pattern">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy-600 mb-6">Sobre Nós</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-500 to-emerald-500 mx-auto mb-8"></div>
+                <p class="font-crimson text-xl text-navy-500 max-w-3xl mx-auto leading-relaxed">
+                    Somos especialistas em criar experiências únicas que combinam luxo, harmonia e o calor da hospitalidade brasileira.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="animate-slide-up">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Nossa equipe especializada" 
+                         class="w-full h-96 object-cover rounded-2xl luxury-shadow">
+                </div>
+                
+                <div class="animate-slide-up" style="animation-delay: 0.2s;">
+                    <h3 class="font-playfair text-3xl font-bold text-navy-600 mb-6">Nossa Missão</h3>
+                    <p class="font-crimson text-lg text-navy-500 mb-6 leading-relaxed">
+                        Acreditamos que cada celebração merece ser extraordinária. Nossa paixão é transformar momentos especiais em memórias inesquecíveis, combinando elegância sofisticada com o aconchego de casa.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-star text-gold-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-navy-600">Excelência em Cada Detalhe</h4>
+                                <p class="text-navy-500 text-sm">Cuidado meticuloso em todos os aspectos do seu evento</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blush-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-heart text-blush-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-navy-600">Personalização Única</h4>
+                                <p class="text-navy-500 text-sm">Cada evento reflete sua personalidade e estilo</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-leaf text-emerald-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-navy-600">Sustentabilidade</h4>
+                                <p class="text-navy-500 text-sm">Práticas conscientes e ingredientes locais</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="scrollToSection('contact')" class="btn-luxury text-white px-6 py-3 rounded-full font-semibold">
+                        <i class="fas fa-envelope mr-2"></i>Entre em Contato
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy-600 mb-6">Nossos Serviços</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-500 to-emerald-500 mx-auto mb-8"></div>
+                <p class="font-crimson text-xl text-navy-500 max-w-3xl mx-auto leading-relaxed">
+                    Do íntimo café da manhã aos grandiosos casamentos, criamos experiências gastronômicas e visuais inesquecíveis.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Café da Manhã -->
+                <div class="service-card bg-white rounded-2xl luxury-shadow p-8 text-center">
+                    <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-coffee text-gold-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-navy-600 mb-4">Café da Manhã</h3>
+                    <p class="font-crimson text-navy-500 mb-6 leading-relaxed">
+                        Comece o dia com elegância. Mesas sofisticadas com produtos artesanais e sabores únicos.
+                    </p>
+                    <button onclick="openServiceModal('cafe')" class="text-gold-600 font-semibold hover:text-gold-700 transition-colors">
+                        Saiba Mais <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <!-- Churrasco -->
+                <div class="service-card bg-white rounded-2xl luxury-shadow p-8 text-center">
+                    <div class="w-20 h-20 bg-blush-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-fire text-blush-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-navy-600 mb-4">Churrasco Gourmet</h3>
+                    <p class="font-crimson text-navy-500 mb-6 leading-relaxed">
+                        A tradição brasileira elevada ao nível gourmet com carnes premium e acompanhamentos especiais.
+                    </p>
+                    <button onclick="openServiceModal('churrasco')" class="text-gold-600 font-semibold hover:text-gold-700 transition-colors">
+                        Saiba Mais <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <!-- 15 Anos -->
+                <div class="service-card bg-white rounded-2xl luxury-shadow p-8 text-center">
+                    <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-crown text-emerald-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-navy-600 mb-4">Festa de 15 Anos</h3>
+                    <p class="font-crimson text-navy-500 mb-6 leading-relaxed">
+                        Uma celebração mágica para marcar esta transição especial com elegância e sofisticação.
+                    </p>
+                    <button onclick="openServiceModal('15anos')" class="text-gold-600 font-semibold hover:text-gold-700 transition-colors">
+                        Saiba Mais <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <!-- Eventos Corporativos -->
+                <div class="service-card bg-white rounded-2xl luxury-shadow p-8 text-center">
+                    <div class="w-20 h-20 bg-navy-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-briefcase text-navy-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-navy-600 mb-4">Eventos Corporativos</h3>
+                    <p class="font-crimson text-navy-500 mb-6 leading-relaxed">
+                        Impressione clientes e colaboradores com eventos profissionais de alta qualidade.
+                    </p>
+                    <button onclick="openServiceModal('corporativo')" class="text-gold-600 font-semibold hover:text-gold-700 transition-colors">
+                        Saiba Mais <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <!-- Festas Temáticas -->
+                <div class="service-card bg-white rounded-2xl luxury-shadow p-8 text-center">
+                    <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-mask text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-navy-600 mb-4">Festas Temáticas</h3>
+                    <p class="font-crimson text-navy-500 mb-6 leading-relaxed">
+                        São João, formaturas, festas infantis - cada tema com decoração e cardápio únicos.
+                    </p>
+                    <button onclick="openServiceModal('tematicas')" class="text-gold-600 font-semibold hover:text-gold-700 transition-colors">
+                        Saiba Mais <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <!-- Casamentos -->
+                <div class="service-card bg-white rounded-2xl luxury-shadow p-8 text-center">
+                    <div class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-ring text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-navy-600 mb-4">Casamentos</h3>
+                    <p class="font-crimson text-navy-500 mb-6 leading-relaxed">
+                        O dia mais importante merece perfeição absoluta. Casamentos inesquecíveis em casa ou locais especiais.
+                    </p>
+                    <button onclick="openServiceModal('casamento')" class="text-gold-600 font-semibold hover:text-gold-700 transition-colors">
+                        Saiba Mais <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Event Planner Tool -->
+            <div class="bg-gradient-to-r from-gold-100 to-blush-100 rounded-2xl p-8 text-center">
+                <h3 class="font-playfair text-3xl font-bold text-navy-600 mb-4">Qual é o seu tipo de festa?</h3>
+                <p class="font-crimson text-lg text-navy-500 mb-8 max-w-2xl mx-auto">
+                    Responda nosso quiz personalizado e descubra o estilo de evento perfeito para você, com sugestões exclusivas da nossa equipe.
+                </p>
+                <button onclick="startQuiz()" class="btn-luxury text-white px-8 py-4 rounded-full font-semibold text-lg">
+                    <i class="fas fa-magic mr-3"></i>Iniciar Quiz Personalizado
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-ivory-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy-600 mb-6">Galeria</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-500 to-emerald-500 mx-auto mb-8"></div>
+                <p class="font-crimson text-xl text-navy-500 max-w-3xl mx-auto leading-relaxed">
+                    Uma amostra dos nossos eventos mais marcantes, cada um único e personalizado.
+                </p>
+            </div>
+            
+            <!-- Gallery Filters -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button onclick="filterGallery('all')" class="gallery-filter active bg-gold-500 text-white px-6 py-2 rounded-full font-medium transition-all duration-300">
+                    Todos
+                </button>
+                <button onclick="filterGallery('cafe')" class="gallery-filter bg-white text-navy-600 px-6 py-2 rounded-full font-medium transition-all duration-300 hover:bg-gold-100">
+                    Café da Manhã
+                </button>
+                <button onclick="filterGallery('churrasco')" class="gallery-filter bg-white text-navy-600 px-6 py-2 rounded-full font-medium transition-all duration-300 hover:bg-gold-100">
+                    Churrasco
+                </button>
+                <button onclick="filterGallery('15anos')" class="gallery-filter bg-white text-navy-600 px-6 py-2 rounded-full font-medium transition-all duration-300 hover:bg-gold-100">
+                    15 Anos
+                </button>
+                <button onclick="filterGallery('corporativo')" class="gallery-filter bg-white text-navy-600 px-6 py-2 rounded-full font-medium transition-all duration-300 hover:bg-gold-100">
+                    Corporativo
+                </button>
+                <button onclick="filterGallery('casamento')" class="gallery-filter bg-white text-navy-600 px-6 py-2 rounded-full font-medium transition-all duration-300 hover:bg-gold-100">
+                    Casamento
+                </button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gallery items will be dynamically loaded -->
+                <div class="gallery-item cafe" data-category="cafe">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Café da manhã elegante" 
+                         class="w-full h-80 object-cover rounded-2xl luxury-shadow cursor-pointer transition-transform duration-300 hover:scale-105"
+                         onclick="openLightbox(this)">
+                </div>
+                
+                <div class="gallery-item churrasco" data-category="churrasco">
+                    <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Churrasco gourmet" 
+                         class="w-full h-80 object-cover rounded-2xl luxury-shadow cursor-pointer transition-transform duration-300 hover:scale-105"
+                         onclick="openLightbox(this)">
+                </div>
+                
+                <div class="gallery-item 15anos" data-category="15anos">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Festa de 15 anos elegante" 
+                         class="w-full h-80 object-cover rounded-2xl luxury-shadow cursor-pointer transition-transform duration-300 hover:scale-105"
+                         onclick="openLightbox(this)">
+                </div>
+                
+                <div class="gallery-item corporativo" data-category="corporativo">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Evento corporativo" 
+                         class="w-full h-80 object-cover rounded-2xl luxury-shadow cursor-pointer transition-transform duration-300 hover:scale-105"
+                         onclick="openLightbox(this)">
+                </div>
+                
+                <div class="gallery-item casamento" data-category="casamento">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Casamento luxuoso" 
+                         class="w-full h-80 object-cover rounded-2xl luxury-shadow cursor-pointer transition-transform duration-300 hover:scale-105"
+                         onclick="openLightbox(this)">
+                </div>
+                
+                <div class="gallery-item cafe" data-category="cafe">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Mesa de café sofisticada" 
+                         class="w-full h-80 object-cover rounded-2xl luxury-shadow cursor-pointer transition-transform duration-300 hover:scale-105"
+                         onclick="openLightbox(this)">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy-600 mb-6">Depoimentos</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-500 to-emerald-500 mx-auto mb-8"></div>
+                <p class="font-crimson text-xl text-navy-500 max-w-3xl mx-auto leading-relaxed">
+                    O que nossos clientes dizem sobre suas experiências conosco.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-ivory-100 rounded-2xl p-8 luxury-shadow">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b5bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
+                             alt="Cliente satisfeita" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold text-navy-600">Maria Silva</h4>
+                            <p class="text-gold-600 text-sm">Aniversário de 15 Anos</p>
+                        </div>
+                    </div>
+                    <div class="flex text-gold-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="font-crimson text-navy-500 leading-relaxed">
+                        "A festa da minha filha foi simplesmente mágica! Cada detalhe foi pensado com carinho e o resultado superou todas as expectativas. Recomendo de coração!"
+                    </p>
+                </div>
+                
+                <div class="bg-ivory-100 rounded-2xl p-8 luxury-shadow">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
+                             alt="Cliente satisfeito" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold text-navy-600">Carlos Santos</h4>
+                            <p class="text-gold-600 text-sm">Evento Corporativo</p>
+                        </div>
+                    </div>
+                    <div class="flex text-gold-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="font-crimson text-navy-500 leading-relaxed">
+                        "Profissionalismo exemplar! O evento da nossa empresa foi um sucesso total. A qualidade do serviço e atenção aos detalhes são incomparáveis."
+                    </p>
+                </div>
+                
+                <div class="bg-ivory-100 rounded-2xl p-8 luxury-shadow">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
+                             alt="Cliente satisfeita" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold text-navy-600">Ana Costa</h4>
+                            <p class="text-gold-600 text-sm">Casamento</p>
+                        </div>
+                    </div>
+                    <div class="flex text-gold-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="font-crimson text-navy-500 leading-relaxed">
+                        "Nosso casamento foi perfeito! A equipe cuidou de tudo com tanto amor e dedicação. Foi exatamente como sonhávamos. Muito obrigada!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-ivory-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy-600 mb-6">Blog</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-500 to-emerald-500 mx-auto mb-8"></div>
+                <p class="font-crimson text-xl text-navy-500 max-w-3xl mx-auto leading-relaxed">
+                    Dicas, inspirações e tendências para tornar seus eventos ainda mais especiais.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-2xl overflow-hidden luxury-shadow hover:transform hover:scale-105 transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Decoração festa junina" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-gold-600 text-sm font-medium">FESTAS TEMÁTICAS</span>
+                        <h3 class="font-playfair text-xl font-bold text-navy-600 mt-2 mb-4">
+                            Como Planejar uma Festa Junina Inesquecível
+                        </h3>
+                        <p class="font-crimson text-navy-500 mb-4 leading-relaxed">
+                            Descubra segredos para criar uma celebração autêntica que combina tradição com elegância moderna...
+                        </p>
+                        <a href="#" class="text-gold-600 font-semibold hover:text-gold-700 transition-colors">
+                            Ler Mais <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="bg-white rounded-2xl overflow-hidden luxury-shadow hover:transform hover:scale-105 transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Mesa de café elegante" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-gold-600 text-sm font-medium">CAFÉ DA MANHÃ</span>
+                        <h3 class="font-playfair text-xl font-bold text-navy-600 mt-2 mb-4">
+                            5 Segredos para um Café da Manhã Sofisticado
+                        </h3>
+                        <p class="font-crimson text-navy-500 mb-4 leading-relaxed">
+                            Transforme sua primeira refeição do dia em uma experiência gastronômica memorável com essas dicas especiais...
+                        </p>
+                        <a href="#" class="text-gold-600 font-semibold hover:text-gold-700 transition-colors">
+                            Ler Mais <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="bg-white rounded-2xl overflow-hidden luxury-shadow hover:transform hover:scale-105 transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Decoração de casamento" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-gold-600 text-sm font-medium">CASAMENTOS</span>
+                        <h3 class="font-playfair text-xl font-bold text-navy-600 mt-2 mb-4">
+                            Tendências de Casamento 2024: Elegância em Casa
+                        </h3>
+                        <p class="font-crimson text-navy-500 mb-4 leading-relaxed">
+                            Conheça as últimas tendências para casamentos íntimos e sofisticados no conforto do lar...
+                        </p>
+                        <a href="#" class="text-gold-600 font-semibold hover:text-gold-700 transition-colors">
+                            Ler Mais <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy-600 mb-6">Contato</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-500 to-emerald-500 mx-auto mb-8"></div>
+                <p class="font-crimson text-xl text-navy-500 max-w-3xl mx-auto leading-relaxed">
+                    Vamos conversar sobre seu evento dos sonhos. Estamos aqui para transformar sua visão em realidade.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <!-- Contact Form -->
+                <div class="bg-ivory-100 rounded-2xl p-8 luxury-shadow">
+                    <h3 class="font-playfair text-2xl font-bold text-navy-600 mb-6">Solicite um Orçamento</h3>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="nome" class="block text-navy-600 font-medium mb-2">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" required 
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                            <div>
+                                <label for="telefone" class="block text-navy-600 font-medium mb-2">Telefone/WhatsApp</label>
+                                <input type="tel" id="telefone" name="telefone" required 
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-navy-600 font-medium mb-2">E-mail</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all duration-300">
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="tipoEvento" class="block text-navy-600 font-medium mb-2">Tipo de Evento</label>
+                                <select id="tipoEvento" name="tipoEvento" required 
+                                        class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all duration-300">
+                                    <option value="">Selecione...</option>
+                                    <option value="cafe">Café da Manhã</option>
+                                    <option value="churrasco">Churrasco Gourmet</option>
+                                    <option value="15anos">Festa de 15 Anos</option>
+                                    <option value="corporativo">Evento Corporativo</option>
+                                    <option value="casamento">Casamento</option>
+                                    <option value="tematico">Festa Temática</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="dataEvento" class="block text-navy-600 font-medium mb-2">Data do Evento</label>
+                                <input type="date" id="dataEvento" name="dataEvento" required 
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="numeroConvidados" class="block text-navy-600 font-medium mb-2">Número de Convidados</label>
+                                <input type="number" id="numeroConvidados" name="numeroConvidados" min="1" required 
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                            <div>
+                                <label for="orcamento" class="block text-navy-600 font-medium mb-2">Orçamento Estimado</label>
+                                <select id="orcamento" name="orcamento" required 
+                                        class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all duration-300">
+                                    <option value="">Selecione...</option>
+                                    <option value="ate-5k">Até R$ 5.000</option>
+                                    <option value="5k-10k">R$ 5.000 - R$ 10.000</option>
+                                    <option value="10k-20k">R$ 10.000 - R$ 20.000</option>
+                                    <option value="20k-50k">R$ 20.000 - R$ 50.000</option>
+                                    <option value="acima-50k">Acima de R$ 50.000</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="mensagem" class="block text-navy-600 font-medium mb-2">Conte-nos sobre seu evento dos sonhos</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required 
+                                      class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all duration-300 resize-none"
+                                      placeholder="Descreva sua visão, preferências, temas especiais, ou qualquer detalhe importante..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full btn-luxury text-white py-4 rounded-lg font-semibold text-lg">
+                            <i class="fas fa-paper-plane mr-3"></i>Enviar Solicitação
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="font-playfair text-2xl font-bold text-navy-600 mb-6">Entre em Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fab fa-whatsapp text-gold-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-navy-600">WhatsApp</h4>
+                                    <p class="text-navy-500">(11) 99999-9999</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blush-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-blush-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-navy-600">E-mail</h4>
+                                    <p class="text-navy-500">contato@docafeaocasamento.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-emerald-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-navy-600">Localização</h4>
+                                    <p class="text-navy-500">São Paulo, SP - Atendemos toda a Grande São Paulo</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-navy-600">Horário de Atendimento</h4>
+                                    <p class="text-navy-500">Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 15h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div>
+                        <h3 class="font-playfair text-2xl font-bold text-navy-600 mb-6">Siga-nos</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://instagram.com/docafeaocasamento" target="_blank" 
+                               class="w-12 h-12 bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full flex items-center justify-center text-white hover:transform hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="https://facebook.com/docafeaocasamento" target="_blank" 
+                               class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:transform hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="https://wa.me/5511999999999" target="_blank" 
+                               class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white hover:transform hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Placeholder -->
+                    <div>
+                        <h3 class="font-playfair text-2xl font-bold text-navy-600 mb-6">Nossa Região de Atendimento</h3>
+                        <div class="bg-gray-200 rounded-2xl h-64 flex items-center justify-center luxury-shadow">
+                            <div class="text-center">
+                                <i class="fas fa-map-marked-alt text-4xl text-gold-600 mb-4"></i>
+                                <p class="font-semibold text-navy-600">Mapa Interativo</p>
+                                <p class="text-navy-500 text-sm">Atendemos toda a Grande São Paulo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-navy-600 text-white py-16 tropical-pattern">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-gold-500 to-gold-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-coffee text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-playfair font-bold text-xl">Do Café ao Casamento</h3>
+                            <p class="text-gold-300 text-sm">Sua celebração, nosso encanto</p>
+                        </div>
+                    </div>
+                    <p class="font-crimson text-gray-300 leading-relaxed mb-6">
+                        Transformamos momentos especiais em memórias inesquecíveis, combinando luxo, elegância e o calor da hospitalidade brasileira.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/docafeaocasamento" target="_blank" 
+                           class="text-gold-300 hover:text-gold-100 transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://facebook.com/docafeaocasamento" target="_blank" 
+                           class="text-gold-300 hover:text-gold-100 transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/5511999999999" target="_blank" 
+                           class="text-gold-300 hover:text-gold-100 transition-colors duration-300">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Links Rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Início</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Sobre Nós</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Serviços</a></li>
+                        <li><a href="#gallery" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Galeria</a></li>
+                        <li><a href="#blog" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Nossos Serviços</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Café da Manhã</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Churrasco Gourmet</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Festa de 15 Anos</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Eventos Corporativos</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Festas Temáticas</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-gold-300 transition-colors duration-300">Casamentos</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-playfair font-bold text-lg mb-6">Contato</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fab fa-whatsapp text-gold-300 text-lg mr-3"></i>
+                            <span class="text-gray-300">(11) 99999-9999</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-gold-300 text-lg mr-3"></i>
+                            <span class="text-gray-300">contato@docafeaocasamento.com.br</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-gold-300 text-lg mr-3"></i>
+                            <span class="text-gray-300">São Paulo, SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Do Café ao Casamento. Todos os direitos reservados. 
+                    <span class="text-gold-300">Desenvolvido com ♥ para celebrar a vida</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modals -->
+    <!-- Service Modal -->
+    <div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-90vh overflow-y-auto">
+            <div class="p-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 id="serviceModalTitle" class="font-playfair text-2xl font-bold text-navy-600"></h3>
+                    <button onclick="closeModal('serviceModal')" class="text-gray-500 hover:text-gray-700 text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div id="serviceModalContent">
+                    <!-- Content will be dynamically loaded -->
+                </div>
+                <div class="mt-8 text-center">
+                    <button onclick="scrollToSection('contact'); closeModal('serviceModal')" class="btn-luxury text-white px-8 py-3 rounded-full font-semibold">
+                        <i class="fas fa-calendar-alt mr-2"></i>Solicitar Orçamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quiz Modal -->
+    <div id="quizModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-90vh overflow-y-auto">
+            <div class="p-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="font-playfair text-2xl font-bold text-navy-600">Qual é o seu tipo de festa?</h3>
+                    <button onclick="closeModal('quizModal')" class="text-gray-500 hover:text-gray-700 text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div id="quizContent">
+                    <!-- Quiz content will be dynamically loaded -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-50 p-4">
+        <div class="max-w-4xl w-full">
+            <div class="flex items-center justify-between mb-4">
+                <h3 id="lightboxTitle" class="font-playfair text-xl font-bold text-white"></h3>
+                <button onclick="closeLightbox()" class="text-white hover:text-gold-300 text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <img id="lightboxImage" src="" alt="" class="w-full h-auto max-h-80vh object-contain rounded-lg">
+        </div>
+    </div>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999" target="_blank" 
+       class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl hover:bg-green-600 transition-all duration-300 hover:scale-110 z-40 luxury-shadow">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- JavaScript -->
+    <script>
+        // Global variables
+        let currentQuizStep = 0;
+        let quizAnswers = {};
+        
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const icon = this.querySelector('i');
+            
+            mobileMenu.classList.toggle('hidden');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            const scrollProgress = document.getElementById('scrollProgress');
+            
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-white', 'bg-opacity-95', 'backdrop-blur-lg');
+                navbar.classList.remove('glass-effect');
+            } else {
+                navbar.classList.remove('bg-white', 'bg-opacity-95', 'backdrop-blur-lg');
+                navbar.classList.add('glass-effect');
+            }
+            
+            // Update scroll progress
+            const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            scrollProgress.style.width = scrollPercent + '%';
+        });
+        
+        // Smooth scroll for nav links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+                
+                // Close mobile menu if open
+                document.getElementById('mobileMenu').classList.add('hidden');
+                const menuBtn = document.getElementById('mobileMenuBtn').querySelector('i');
+                menuBtn.classList.add('fa-bars');
+                menuBtn.classList.remove('fa-times');
+            });
+        });
+        
+        // Gallery filter
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const filters = document.querySelectorAll('.gallery-filter');
+            
+            // Update active filter
+            filters.forEach(filter => {
+                filter.classList.remove('active', 'bg-gold-500', 'text-white');
+                filter.classList.add('bg-white', 'text-navy-600');
+            });
+            
+            event.target.classList.add('active', 'bg-gold-500', 'text-white');
+            event.target.classList.remove('bg-white', 'text-navy-600');
+            
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                    item.style.animation = 'fadeIn 0.5s ease-in-out';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+        
+        // Lightbox functionality
+        function openLightbox(img) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const lightboxTitle = document.getElementById('lightboxTitle');
+            
+            lightboxImage.src = img.src;
+            lightboxImage.alt = img.alt;
+            lightboxTitle.textContent = img.alt;
+            
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+        }
+        
+        // Service modal
+        function openServiceModal(serviceType) {
+            const modal = document.getElementById('serviceModal');
+            const title = document.getElementById('serviceModalTitle');
+            const content = document.getElementById('serviceModalContent');
+            
+            const serviceData = {
+                cafe: {
+                    title: 'Café da Manhã Sofisticado',
+                    content: `
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Café da manhã elegante" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <p class="font-crimson text-navy-500 mb-4 leading-relaxed">
+                            Transforme sua manhã em uma experiência gastronômica inesquecível. Nossos cafés da manhã combinam produtos artesanais, 
+                            apresentação sofisticada e sabores únicos que despertam todos os sentidos.
+                        </p>
+                        <h4 class="font-semibold text-navy-600 mb-3">O que incluímos:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-navy-500 mb-6">
+                            <li>Pães artesanais frescos e croissants franceses</li>
+                            <li>Seleção de cafés especiais e chás premium</li>
+                            <li>Frutas orgânicas e sucos naturais</li>
+                            <li>Frios gourmet e queijos selecionados</li>
+                            <li>Doces caseiros e geleias artesanais</li>
+                            <li>Mesa decorada com arranjos florais</li>
+                        </ul>
+                        <div class="bg-gold-50 p-4 rounded-lg">
+                            <p class="text-gold-700 font-medium">💡 Dica: Perfeito para comemorações íntimas, reuniões familiares ou um domingo especial em casa.</p>
+                        </div>
+                    `
+                },
+                churrasco: {
+                    title: 'Churrasco Gourmet',
+                    content: `
+                        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Churrasco gourmet" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <p class="font-crimson text-navy-500 mb-4 leading-relaxed">
+                            A tradição brasileira do churrasco elevada ao nível gourmet. Carnes premium, temperos especiais e acompanhamentos 
+                            sofisticados que tornam cada reunião uma celebração memorável.
+                        </p>
+                        <h4 class="font-semibold text-navy-600 mb-3">Nosso diferencial:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-navy-500 mb-6">
+                            <li>Carnes nobres selecionadas (picanha, costela, fraldinha premium)</li>
+                            <li>Churrasqueiro profissional especializado</li>
+                            <li>Buffet completo de saladas gourmet</li>
+                            <li>Farofa especial da casa e vinagrete artesanal</li>
+                            <li>Pão de alho e queijo coalho defumado</li>
+                            <li>Decoração temática brasileira elegante</li>
+                        </ul>
+                        <div class="bg-emerald-50 p-4 rounded-lg">
+                            <p class="text-emerald-700 font-medium">🔥 Especialidade: Nosso churrasqueiro tem mais de 15 anos de experiência em eventos de alto padrão.</p>
+                        </div>
+                    `
+                },
+                '15anos': {
+                    title: 'Festa de 15 Anos Elegante',
+                    content: `
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Festa de 15 anos elegante" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <p class="font-crimson text-navy-500 mb-4 leading-relaxed">
+                            Uma celebração mágica para marcar esta transição especial. Criamos festas de 15 anos que combinam elegância, 
+                            diversão e personalidade única, tornando este momento inesquecível para toda a família.
+                        </p>
+                        <h4 class="font-semibold text-navy-600 mb-3">Experiência completa:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-navy-500 mb-6">
+                            <li>Decoração temática personalizada (princesa, moderna, vintage)</li>
+                            <li>Buffet jovem e sofisticado</li>
+                            <li>Bolo cenográfico de múltiplos andares</li>
+                            <li>Cerimônia da valsa com coreografia</li>
+                            <li>DJ especializado em eventos jovens</li>
+                            <li>Fotografia e filmagem profissional</li>
+                        </ul>
+                        <div class="bg-blush-50 p-4 rounded-lg">
+                            <p class="text-blush-700 font-medium">👑 Exclusivo: Cada debutante recebe uma tiara personalizada como lembrança especial.</p>
+                        </div>
+                    `
+                },
+                corporativo: {
+                    title: 'Eventos Corporativos',
+                    content: `
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Evento corporativo" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <p class="font-crimson text-navy-500 mb-4 leading-relaxed">
+                            Impressione clientes e colaboradores com eventos corporativos de alto padrão. Oferecemos soluções completas 
+                            que fortalecem relacionamentos e promovem sua marca com elegância e profissionalismo.
+                        </p>
+                        <h4 class="font-semibold text-navy-600 mb-3">Serviços corporativos:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-navy-500 mb-6">
+                            <li>Coffee breaks sofisticados</li>
+                            <li>Almoços executivos</li>
+                            <li>Coquetéis de networking</li>
+                            <li>Confraternizações de fim de ano</li>
+                            <li>Lançamentos de produtos</li>
+                            <li>Branding personalizado no evento</li>
+                        </ul>
+                        <div class="bg-navy-50 p-4 rounded-lg">
+                            <p class="text-navy-700 font-medium">💼 Vantagem: Parcerias com fornecedores corporativos para descontos especiais em eventos recorrentes.</p>
+                        </div>
+                    `
+                },
+                tematicas: {
+                    title: 'Festas Temáticas',
+                    content: `
+                        <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Festa temática" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <p class="font-crimson text-navy-500 mb-4 leading-relaxed">
+                            Desde arraiais de São João autênticos até formaturas elegantes, criamos festas temáticas que capturam 
+                            perfeitamente o espírito de cada celebração, com atenção aos detalhes culturais e estéticos.
+                        </p>
+                        <h4 class="font-semibold text-navy-600 mb-3">Nossos temas populares:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-navy-500 mb-6">
+                            <li>São João (quadrilha, decoração típica, comidas juninas gourmet)</li>
+                            <li>Festas infantis temáticas (personagens, super-heróis)</li>
+                            <li>Formaturas (elegantes e memoráveis)</li>
+                            <li>Festa tropical (decoração exótica, drinks especiais)</li>
+                            <li>Vintage/Retrô (décadas 50, 60, 80)</li>
+                            <li>Temas personalizados conforme sua preferência</li>
+                        </ul>
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <p class="text-yellow-700 font-medium">🎭 Criatividade: Nossa equipe de design cria decorações exclusivas para cada tema, nunca repetimos montagens.</p>
+                        </div>
+                    `
+                },
+                casamento: {
+                    title: 'Casamentos Luxuosos',
+                    content: `
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Casamento luxuoso" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <p class="font-crimson text-navy-500 mb-4 leading-relaxed">
+                            O dia mais importante merece perfeição absoluta. Nossos casamentos são verdadeiras obras de arte, 
+                            onde cada detalhe é cuidadosamente planejado para criar momentos mágicos e inesquecíveis.
+                        </p>
+                        <h4 class="font-semibold text-navy-600 mb-3">Serviço completo:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-navy-500 mb-6">
+                            <li>Cerimônia em casa ou locais exclusivos</li>
+                            <li>Decoração floral luxuosa e personalizada</li>
+                            <li>Menu gastronômico de alta qualidade</li>
+                            <li>Serviço de mesa francesa completo</li>
+                            <li>Wedding planner dedicado</li>
+                            <li>Coordenação no dia do evento</li>
+                        </ul>
+                        <div class="bg-pink-50 p-4 rounded-lg">
+                            <p class="text-pink-700 font-medium">💕 Promessa: Garantimos que seu casamento será exatamente como vocês sonharam, ou refazemos sem custo.</p>
+                        </div>
+                    `
+                }
+            };
+            
+            const service = serviceData[serviceType];
+            title.textContent = service.title;
+            content.innerHTML = service.content;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+        
+        // Quiz functionality
+        function startQuiz() {
+            currentQuizStep = 0;
+            quizAnswers = {};
+            
+            const modal = document.getElementById('quizModal');
+            const content = document.getElementById('quizContent');
+            
+            content.innerHTML = `
+                <div class="text-center mb-8">
+                    <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-magic text-gold-600 text-2xl"></i>
+                    </div>
+                    <p class="font-crimson text-lg text-navy-500">
+                        Vamos descobrir o evento perfeito para você! São apenas algumas perguntas rápidas.
+                    </p>
+                </div>
+                <button onclick="nextQuizStep()" class="w-full btn-luxury text-white py-4 rounded-lg font-semibold">
+                    Começar Quiz
+                </button>
+            `;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+        
+        function nextQuizStep() {
+            const questions = [
+                {
+                    question: "Qual é a ocasião do seu evento?",
+                    options: [
+                        { text: "Celebração familiar íntima", value: "familiar" },
+                        { text: "Festa de aniversário especial", value: "aniversario" },
+                        { text: "Evento corporativo", value: "corporativo" },
+                        { text: "Casamento", value: "casamento" },
+                        { text: "Comemoração temática", value: "tematica" }
+                    ]
+                },
+                {
+                    question: "Quantos convidados você espera?",
+                    options: [
+                        { text: "Até 20 pessoas (íntimo)", value: "pequeno" },
+                        { text: "21-50 pessoas (médio)", value: "medio" },
+                        { text: "51-100 pessoas (grande)", value: "grande" },
+                        { text: "Mais de 100 pessoas", value: "muito-grande" }
+                    ]
+                },
+                {
+                    question: "Qual estilo você prefere?",
+                    options: [
+                        { text: "Clássico e elegante", value: "classico" },
+                        { text: "Moderno e sofisticado", value: "moderno" },
+                        { text: "Rústico e aconchegante", value: "rustico" },
+                        { text: "Tropical e descontraído", value: "tropical" }
+                    ]
+                },
+                {
+                    question: "Qual é o seu orçamento estimado?",
+                    options: [
+                        { text: "Até R$ 5.000", value: "budget1" },
+                        { text: "R$ 5.000 - R$ 15.000", value: "budget2" },
+                        { text: "R$ 15.000 - R$ 30.000", value: "budget3" },
+                        { text: "Acima de R$ 30.000", value: "budget4" }
+                    ]
+                }
+            ];
+            
+            if (currentQuizStep < questions.length) {
+                showQuizQuestion(questions[currentQuizStep]);
+            } else {
+                showQuizResults();
+            }
+        }
+        
+        function showQuizQuestion(question) {
+            const content = document.getElementById('quizContent');
+            const progress = ((currentQuizStep + 1) / 5) * 100;
+            
+            content.innerHTML = `
+                <div class="mb-8">
+                    <div class="w-full bg-gray-200 rounded-full h-2 mb-6">
+                        <div class="bg-gradient-to-r from-gold-500 to-emerald-500 h-2 rounded-full transition-all duration-300" style="width: ${progress}%"></div>
+                    </div>
+                    <h4 class="font-playfair text-xl font-bold text-navy-600 mb-6">${question.question}</h4>
+                    <div class="space-y-3">
+                        ${question.options.map(option => `
+                            <button onclick="selectQuizOption('${option.value}')" 
+                                    class="w-full text-left p-4 bg-ivory-100 rounded-lg hover:bg-gold-100 hover:border-gold-300 border border-transparent transition-all duration-300">
+                                ${option.text}
+                            </button>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+        
+        function selectQuizOption(value) {
+            quizAnswers[`step${currentQuizStep}`] = value;
+            currentQuizStep++;
+            nextQuizStep();
+        }
+        
+        function showQuizResults() {
+            // Simple algorithm to determine recommendation
+            let recommendation = "cafe"; // default
+            
+            if (quizAnswers.step0 === "casamento") {
+                recommendation = "casamento";
+            } else if (quizAnswers.step0 === "corporativo") {
+                recommendation = "corporativo";
+            } else if (quizAnswers.step0 === "aniversario" && quizAnswers.step1 === "medio") {
+                recommendation = "15anos";
+            } else if (quizAnswers.step2 === "rustico" || quizAnswers.step2 === "tropical") {
+                recommendation = "churrasco";
+            } else if (quizAnswers.step0 === "tematica") {
+                recommendation = "tematicas";
+            }
+            
+            const recommendations = {
+                cafe: {
+                    title: "Café da Manhã Sofisticado",
+                    description: "Perfeito para celebrações íntimas e elegantes",
+                    icon: "fas fa-coffee",
+                    color: "gold"
+                },
+                churrasco: {
+                    title: "Churrasco Gourmet",
+                    description: "Ideal para reunir família e amigos com sabor brasileiro",
+                    icon: "fas fa-fire",
+                    color: "emerald"
+                },
+                "15anos": {
+                    title: "Festa de 15 Anos",
+                    description: "Uma celebração mágica para um momento especial",
+                    icon: "fas fa-crown",
+                    color: "blush"
+                },
+                corporativo: {
+                    title: "Evento Corporativo",
+                    description: "Profissionalismo e elegância para impressionar",
+                    icon: "fas fa-briefcase",
+                    color: "navy"
+                },
+                tematicas: {
+                    title: "Festa Temática",
+                    description: "Criatividade e personalização únicas",
+                    icon: "fas fa-mask",
+                    color: "purple"
+                },
+                casamento: {
+                    title: "Casamento Luxuoso",
+                    description: "Perfeição absoluta para o dia mais importante",
+                    icon: "fas fa-ring",
+                    color: "pink"
+                }
+            };
+            
+            const result = recommendations[recommendation];
+            
+            const content = document.getElementById('quizContent');
+            content.innerHTML = `
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-${result.color}-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="${result.icon} text-${result.color}-600 text-3xl"></i>
+                    </div>
+                    <h4 class="font-playfair text-2xl font-bold text-navy-600 mb-4">
+                        Recomendamos: ${result.title}
+                    </h4>
+                    <p class="font-crimson text-lg text-navy-500 mb-8">
+                        ${result.description}
+                    </p>
+                    <div class="space-y-4">
+                        <button onclick="openServiceModal('${recommendation}'); closeModal('quizModal')" 
+                                class="w-full btn-luxury text-white py-4 rounded-lg font-semibold">
+                            <i class="fas fa-info-circle mr-2"></i>Ver Detalhes do Serviço
+                        </button>
+                        <button onclick="scrollToSection('contact'); closeModal('quizModal')" 
+                                class="w-full bg-white border border-gold-500 text-gold-600 py-4 rounded-lg font-semibold hover:bg-gold-50 transition-colors">
+                            <i class="fas fa-calendar-alt mr-2"></i>Solicitar Orçamento
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Modal close functionality
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+        
+        // Close modals when clicking outside
+        window.addEventListener('click', function(e) {
+            const modals = ['serviceModal', 'quizModal', 'lightbox'];
+            modals.forEach(modalId => {
+                const modal = document.getElementById(modalId);
+                if (e.target === modal) {
+                    closeModal(modalId);
+                }
+            });
+        });
+        
+        // Form submission (JavaScript-based)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            
+            // Simulate form submission
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Enviando...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                // Success simulation
+                submitButton.innerHTML = '<i class="fas fa-check mr-2"></i>Enviado com Sucesso!';
+                submitButton.classList.remove('btn-luxury');
+                submitButton.classList.add('bg-green-500');
+                
+                // Show success message
+                alert(`Obrigado, ${data.nome}! Recebemos sua solicitação e entraremos em contato em breve via WhatsApp (${data.telefone}).`);
+                
+                // Reset form after 3 seconds
+                setTimeout(() => {
+                    this.reset();
+                    submitButton.innerHTML = originalText;
+                    submitButton.disabled = false;
+                    submitButton.classList.add('btn-luxury');
+                    submitButton.classList.remove('bg-green-500');
+                }, 3000);
+            }, 2000);
+        });
+        
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-fade-in, .animate-slide-up');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+        
+        // Initialize animations
+        window.addEventListener('scroll', animateOnScroll);
+        document.addEventListener('DOMContentLoaded', animateOnScroll);
+        
+        // Set minimum date for event date input
+        document.getElementById('dataEvento').min = new Date().toISOString().split('T')[0];
+        
+        // Phone number formatting (Brazilian format)
+        document.getElementById('telefone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.length <= 11) {
+                if (value.length <= 2) {
+                    value = value.replace(/(\d{0,2})/, '($1');
+                } else if (value.length <= 7) {
+                    value = value.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+                } else {
+                    value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+                }
+            }
+            
+            e.target.value = value;
+        });
+        
+        // Scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Show scroll to top button
+        window.addEventListener('scroll', function() {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (scrollToTopBtn) {
+                if (window.scrollY > 500) {
+                    scrollToTopBtn.classList.remove('hidden');
+                } else {
+                    scrollToTopBtn.classList.add('hidden');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
