@@ -231,9 +231,9 @@
 ### Personalização Necessária
 Antes do deploy em produção, substitua as seguintes informações placeholder:
 
-- **Telefone/WhatsApp**: (11) 99999-9999 → Número real da empresa
-- **Email**: contato@docafeaocasamento.com.br → Email corporativo real  
-- **Endereço**: São Paulo, SP → Localização específica da empresa
+- **Telefone/WhatsApp**: (31) 99289-8406
+- **Email**: contato@jaefesta.com.br → Email corporativo real  
+- **Endereço**: Belo Horizonte -  Minas Gerais → Localização específica da empresa
 - **Links Sociais**: URLs das redes sociais reais
 - **Logo**: Substituir placeholder por logo profissional criado
 
